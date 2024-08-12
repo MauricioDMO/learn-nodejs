@@ -1,7 +1,7 @@
-const fs = require('node:fs/promises');
-const path = require('node:path');
+const fs = require('node:fs/promises')
+const path = require('node:path')
 
-const dir = process.argv[2] ?? './';
+const dir = process.argv[2] ?? './'
 
 async function ls (dir) {
   let files
@@ -20,6 +20,7 @@ async function ls (dir) {
     } catch (err) {
       console.error(`No se pudo leer el archivo ${file}`)
       process.exit(1)
+      return null
     }
   })
 
@@ -28,15 +29,15 @@ async function ls (dir) {
       const maxFileNameLength = Math.max(...files.map(file => file.length))
 
       filesStats.forEach((stats, i) => {
-        const fileType = stats.isDirectory() ? 'D -' : 'F -';
-        const file = files[i];
-        const fileSize = `${(stats.size / 1024).toFixed(2)} KB`;
-        const lastModified = stats.mtime.toLocaleString();
+        const fileType = stats.isDirectory() ? 'D -' : 'F -'
+        const file = files[i]
+        const fileSize = `${(stats.size / 1024).toFixed(2)} KB`
+        const lastModified = stats.mtime.toLocaleString()
 
-        console.log(`${fileType} ${file.padEnd(maxFileNameLength)} ${fileSize.padStart(8)} - ${lastModified}`);
+        console.log(`${fileType} ${file.padEnd(maxFileNameLength)} ${fileSize.padStart(8)} - ${lastModified}`)
       })
     }
-  )
+    )
 }
 
-ls(dir);
+ls(dir)

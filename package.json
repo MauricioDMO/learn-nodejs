@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "despues"
+    "url": "https://github.com/MauricioDMO/learn-nodejs.git"
   },
   "keywords": [
     "learn",
@@ -28,3 +28,4 @@
     "extends": "standard"
   }
 }
+

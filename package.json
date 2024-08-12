@@ -1,7 +1,7 @@
 {
-  "name": "learn-node",
+  "name": "learn-nodejs",
   "version": "1.0.0",
-  "description": "In this project learn node.js",
+  "description": "Proyecto en el cual me dedico A aprender node js.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

@@ -384,7 +384,7 @@ Promise.all([
 
 El módulo `path` es un módulo nativo de Node.js que se utiliza para trabajar con rutas de archivos.
 
-Estos son algunos de sus metodo:
+Estos son algunos de sus método:
 
 - `path.sep`: Devuelve el separador de rutas de archivos del sistema operativo.
 - `path.join()`: Une varias rutas de archivos en una sola ruta. Esto pasándole como argumentos las rutas que queremos unir. // path.join('carpeta', 'archivo.txt')
@@ -554,7 +554,7 @@ El archivo `package.json` tiene la siguiente estructura:
   },
   "repository": { // Repositorio de Git del proyecto
     "type": "git",
-    "url": "despues"
+    "url": "https://github.com/user/repo.git"
   },
   "keywords": [ // Palabras clave del proyecto
     "learn",

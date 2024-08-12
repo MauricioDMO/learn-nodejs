@@ -1,0 +1,30 @@
+{
+  "name": "learn-node",
+  "version": "1.0.0",
+  "description": "In this project learn node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "despues"
+  },
+  "keywords": [
+    "learn",
+    "node",
+    "nodejs",
+    "MauricioDMO"
+  ],
+  "author": "Mauricio Martínez - MauricioDMO",
+  "license": "ISC",
+  "dependencies": {
+    "picocolors": "1.0.1"
+  },
+  "devDependencies": {
+    "standard": "17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
